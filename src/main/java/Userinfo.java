@@ -22,12 +22,12 @@ public class Userinfo {
     }
 
     private void getUserinfo() {
-            String country[]  = {"China","United States"};
+            String product[]  = {"Powders","Lips","Face Wash"};
             get("/userinfo", (req, res) -> {
 
                 Map<String, Object> attributes = new HashMap<>();
                 attributes.put("username","User1");
-                attributes.put("countries",country);
+                attributes.put("products",product);
 
                 return new ModelAndView(attributes, "userpage.ftl");
               }, new FreeMarkerEngine());
