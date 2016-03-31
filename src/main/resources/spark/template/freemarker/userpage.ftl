@@ -70,3 +70,34 @@
         </div>
         <!-- /.container -->
     </nav>
+
+
+    <div id="body">
+
+    <h2><b>Hello, ${username}</b></h2>
+    <#if product??>
+    <div id ="userinfo">No product has been liked!</div>
+    <#else >
+
+    <ul>
+      <#list products as product>
+      <li> ${product}</li>
+    </ul>
+      </#list>
+    </div>
+    </#if>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
