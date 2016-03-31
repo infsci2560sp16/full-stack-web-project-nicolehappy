@@ -61,8 +61,8 @@
                     <li>
                         <a href="about.html">About</a>
                     </li>
-                    <li>
-                        <a href="mypage.html">My Page</a>
+                    <li class = "current">
+                        <a href="/userinfo"> Personal Page</a>
                     </li>
                 </ul>
             </div>

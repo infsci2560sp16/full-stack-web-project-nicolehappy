@@ -128,7 +128,7 @@
                         
                         </div>
                         <div class="button-container">
-                        <button><span>Next</span></button>
+                        <button><span id="submit">Next</button>
                         </div>
                     </form>
                 </div>
@@ -138,5 +138,35 @@
             </div>
     </div>
     <script src="js/checkPass.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+
+
+    $(function(){
+
+        $("#submit").click(function(){
+        var username = $("#Username2").val();
+        var password = $("#pass1").val();
+        var cpassword =$("#pass2").val();
+        var send = JSON.stringify({"username":username,"password":password,"cpassword":cpassword});
+        alert(send);
+              $.ajax({
+                  contentType:'application/json',
+                  url: '/api/login',
+                  type: "POST",
+                  datatype: "json",
+                  data: send,
+                  success: function(data) {
+                      alert("Register successfully.");
+                      window.location.href='/home.html';
+                  }
+              });
+                    return false;
+          });
+   });
+
+
+
+    </script>
     </body>
     </html>
