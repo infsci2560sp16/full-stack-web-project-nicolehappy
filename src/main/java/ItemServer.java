@@ -23,8 +23,8 @@ public class ItemServer {
   }
 
 
-  private void getCountryInfo(){
-    get("/api/ItemInfo/:name", (req, res) -> {
+  private void getItemInfo(){
+    get("/api/blog/:name", (req, res) -> {
 
       String name = req.params(":name");
       HashMap<String,ItemInfo> itemList = new HashMap<>();
