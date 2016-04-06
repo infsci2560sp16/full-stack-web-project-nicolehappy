@@ -22,8 +22,47 @@ public class Main {
     port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/public");
 
+    Gson gson = new Gson();
+
+    new ItemController(new LikeServer());
+
+    get("/like", (req, res) -> {
+
+          Connection connection = null;
+          // res.type("application/xml"); //Return as XML
+
+          Map<String, Object> attributes = new HashMap<>();
+          try {
+
+
+              String xml = "<?xml version=\"1.0\" encoding=\"utf-8\"?>";
+              xml += "<Like>";
+
+                  xml += "<Branch>";
+                  xml += "<Name>fash wash</Name>";
+                  xml += "<Brand>CLARISONIC</Brand>";
+                  xml += "<Category>Skin Care</Category>";
+                  xml += "<Price>100</Price>";
+                  xml += "<Sensitive>no</Sensitive>";
+                  xml += "<Review>4</Review>";
+                  xml += "<Newin>no</Newin>";
+                  xml += "<Phone>111-222-3333</Phone>";
+                  xml += "<Email>yul134@pitt.edu</Email>";
+                  xml += "<Address>4200 Fifth Ave</Address>";
+                  xml += "</Branch>";
+
+              xml += "</Like>";
+              res.type("text/xml");
+              return xml;
+
+          } catch (Exception e) {
+              attributes.put("message", "There was an error: " + e);
+              return attributes;
+          } finally {
+              if (connection != null) try{connection.close();} catch(SQLException e){}
+          }
+      });
    
-    Object r2 = new SignUpServer();
    
 
     get("/hello", (req, res) -> "Hello World");
