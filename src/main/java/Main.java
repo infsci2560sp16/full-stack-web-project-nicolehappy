@@ -24,7 +24,7 @@ public class Main {
 
     Gson gson = new Gson();
 
-    new ItemController(new LikeServer());
+    new ItemController(new ItemService());
 
     get("/like", (req, res) -> {
 
