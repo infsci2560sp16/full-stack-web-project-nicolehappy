@@ -15,7 +15,7 @@ import static spark.Spark.get;
 
 public class Userinfo {
 
-    Gson gson = new Gson();
+    //Gson gson = new Gson();
 
     public Userinfo() {
         getUserinfo();
