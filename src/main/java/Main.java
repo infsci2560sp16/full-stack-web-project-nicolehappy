@@ -74,8 +74,8 @@ public class Main {
                   String password = obj.getString("password");
                   String cpassword = obj.getString("cpassword");
 
-                  String sql = "INSERT INTO User(username, email, password) VALUES ('"
-                                + username + "','" + password1 + "','" + password2 + "')";
+                  String sql = "INSERT INTO User(username, password, cpassword) VALUES ('"
+                                + username + "','" + password + "','" + cpassword + "')";
 
                   connection = DatabaseUrl.extract().getConnection();
                   Statement stmt = connection.createStatement();
