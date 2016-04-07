@@ -63,7 +63,12 @@ public class Main {
           }
       });
    
-   
+    get("/userinfo", (request, response) -> {
+            Map<String, Object> attributes = new HashMap<>();
+            attributes.put("message", "Hello World!");
+
+            return new ModelAndView(attributes, "userinfo.ftl");
+        }, new FreeMarkerEngine());
 
     get("/hello", (req, res) -> "Hello World");
 
