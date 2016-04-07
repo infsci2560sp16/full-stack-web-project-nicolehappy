@@ -18,9 +18,9 @@ public class DefaultServer {
 
     }
     private void setDefault() {
-      post("/aboutme", (req, res) -> {
+      post("api/aboutme", (req, res) -> {
           Map<String, Object> data = new HashMap<>();
-          data.put("name", "Yue Li");
+          data.put("Name", "Yue Li");
           data.put("Email", "yul134@pitt.edu");
           return data;
       }, gson::toJson);
