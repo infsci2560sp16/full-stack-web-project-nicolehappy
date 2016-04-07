@@ -71,8 +71,8 @@ public class Main {
                   connection = DatabaseUrl.extract().getConnection();
                   JSONObject obj = new JSONObject(req.body());
                   String username = obj.getString("username");
-                  String password1 = obj.getString("password");
-                  String password2 = obj.getString("cpassword");
+                  String password = obj.getString("password");
+                  String cpassword = obj.getString("cpassword");
 
                   String sql = "INSERT INTO User(username, email, password) VALUES ('"
                                 + username + "','" + password1 + "','" + password2 + "')";
