@@ -63,6 +63,32 @@ public class Main {
               if (connection != null) try{connection.close();} catch(SQLException e){}
           }
       });
+
+
+  post("/aboutme", (req, res) -> {
+           Connection connection = null;
+              try {
+                  connection = DatabaseUrl.extract().getConnection();
+                  JSONObject obj = new JSONObject(req.body());
+                  String username = obj.getString("username");
+                  String password1 = obj.getString("password");
+                  String password2 = obj.getString("cpassword");
+
+                  String sql = "INSERT INTO User(username, email, password) VALUES ('"
+                                + username + "','" + password1 + "','" + password2 + "')";
+
+                  connection = DatabaseUrl.extract().getConnection();
+                  Statement stmt = connection.createStatement();
+                  stmt.executeUpdate("CREATE TABLE IF NOT EXISTS User");
+                  stmt.executeUpdate(sql);
+
+                 return req.body();
+                } catch (Exception e) {
+                  return e.getMessage();
+                } finally {
+
+                }
+              });
    
     get("/userinfo", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
