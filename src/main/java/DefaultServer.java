@@ -18,7 +18,7 @@ public class DefaultServer {
 
     }
     private void setDefault() {
-      post("/api/about", (req, res) -> {
+      post("/aboutme", (req, res) -> {
           Map<String, Object> data = new HashMap<>();
           data.put("name", "Yue Li");
           data.put("Email", "yul134@pitt.edu");
