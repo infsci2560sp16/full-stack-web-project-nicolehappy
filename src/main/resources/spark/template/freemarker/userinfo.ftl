@@ -61,69 +61,10 @@
                     </h2>
                     <hr>
                 </div>
-                <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="img/clar.jpg" style="width:380px;height:237px;" alt="">
-                    <h3>Clarasonic
-                        <small>Face wash</small>
-                        <img id="myImage1" onclick="changeImage()" class="img-left" src="img/likeoff.png" alt="" style="width:20px;height:20px;">
-                    </h3>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="img/armani_lip.jpg" style="width:380px;height:237px;" alt="">
-                    <h3>Giorgio Armani
-                        <small>Lips</small>
-                        <img id="myImage2" onclick="changeImage()" class="img-left" src="img/likeoff.png" alt="" style="width:20px;height:20px;">
-                    </h3>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="img/guerlain.png" style="width:380px;height:237px;" alt="">
-                    <h3>Guerlain
-                        <small>Powders</small>
-                        <img id="myImage3" onclick="changeImage()" class="img-left" src="img/likeoff.png" alt="" style="width:20px;height:20px;">
-                    </h3>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="img/chanel.png" style="width:380px;height:237px;" alt="">
-                    <h3>Chanel
-                        <small>Nail polish</small>
-                        <img id="myImage4" onclick="changeImage()" class="img-left" src="img/likeoff.png" alt="" style="width:20px;height:20px;">
-                    </h3>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="img/dior.png" style="width:380px;height:237px;" alt="">
-                    <h3>Dior
-                        <small>Eye shadow</small>
-                        <img id="myImage5" onclick="changeImage()" class="img-left" src="img/likeoff.png" alt="" style="width:20px;height:20px;">
-                    </h3>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="img/nars.jpg" style="width:380px;height:237px;" alt="">
-                    <h3>Nars
-                        <small>Blush</small>
-                        <img id="myImage6" onclick="changeImage()" class="img-left" src="img/likeoff.png" alt="" style="width:20px;height:20px;">
-                    </h3>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="img/kiehls.png" style="width:380px;height:237px;" alt="">
-                    <h3>Kiehl's
-                        <small>Skin care</small>
-                        <img id="myImage7" onclick="changeImage()" class="img-left" src="img/likeoff.png" alt="" style="width:20px;height:20px;">
-                    </h3>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="img/ysl.jpg" style="width:380px;height:237px;" alt="">
-                    <h3>YSL
-                        <small>Mascara</small>
-                        <img id="myImage8" onclick="changeImage()" class="img-left" src="img/likeoff.png" alt="" style="width:20px;height:20px;">
-                    </h3>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="img/sigma.png" style="width:380px;height:237px;" alt="">
-                    <h3>Sigma
-                        <small>Brushes</small>
-                        <img id="myImage9" onclick="changeImage()" class="img-left" src="img/likeoff.png" alt="" style="width:20px;height:20px;">
-                    </h3>
-                </div>
+                
+
+  
+           
 
                 
                         <h3>Get JSON</h3>
